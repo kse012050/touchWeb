@@ -1,9 +1,14 @@
 .borderBox{ border: 1px solid #cccccc;}
 .paddingBox{padding: 30px 20px; box-sizing: border-box;}
 
+.imgBox{background-repeat: no-repeat; background-size: cover; background-position: center;}
+
 .fontCase01 strong{display: block; font-size: 20px; font-weight: 800; margin-bottom: 15px;}
-.fontCase01 strong small{display: inline-block; font-size: 14px; font-weight: 700; color: #888888; margin-left: 5px;}
+.fontCase01 small{display: inline-block; font-size: 14px; font-weight: 700; color: #888888; margin-left: 5px;}
 .fontCase01 p{font-size: 16px; line-height: 24px;}
+.fontCase01 time{display: block; font-size: 12px; color: #888888;}
+
+ 
 
 .mainPage section h2{font-size: 26px; font-weight: 800; margin-bottom: 20px;}
 
@@ -49,6 +54,24 @@
 .tabArea .tabContents{border: 1px solid #ff9900;}
 .tabArea .tabContents ul li:not(:last-child){margin-bottom: 10px;}
 .tabArea .tabContents ul li a{display: flex; align-items: center;}
-.tabArea .tabContents ul li a .imgArea{width: 200px; height: 135px; border: 1px solid #b8b8b8; margin-right: 25px; background-repeat: no-repeat; background-size: cover; background-position: center;}
+.tabArea .tabContents ul li a .imgBox{width: 200px; height: 135px; border: 1px solid #b8b8b8; margin-right: 25px; background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+
+/* 메인 인기원룸 */
+.popularArea ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.popularArea ul li{width: 440px;}
+.popularArea ul li:not(:nth-child(-n + 2)){margin-top: 10px;}
+.popularArea ul li a{display: flex; align-items: center; background-color:#f5f5f5;}
+.popularArea ul li a .imgBox{width: 200px; height: 135px;}
+
+
+
+/* 메인 실시간 인기 중고 */
+.realTimeArea ul{display: flex; justify-content: space-between;}
+.realTimeArea ul li{width: 215px;}
+.realTimeArea ul li a{width: 100%;}
+.realTimeArea ul li a .imgBox{width: 100%; height: 145px; margin-bottom: 20px;}
+
+
 
 
