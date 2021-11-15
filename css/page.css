@@ -115,3 +115,5 @@
 .mainPage aside .boardArea ul li:not(:last-child){margin-bottom: 20px;}
 .mainPage aside .boardArea ul li a{display: flex; justify-content: space-between; align-items: flex-end;}
 
+.mainPage aside .boardArea ul.latestPosts li:not(:last-child){border-bottom: 1px solid #efefef; padding-bottom: 10px;}
+
