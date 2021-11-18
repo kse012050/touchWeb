@@ -1,5 +1,5 @@
-.borderBox{ border: 1px solid #cccccc;}
-.paddingBox{padding: 30px 20px; box-sizing: border-box;}
+.mainPage .borderBox{ border: 1px solid #cccccc;}
+.mainPage .paddingBox{padding: 30px 20px; box-sizing: border-box;}
 
 .imgBox{background-repeat: no-repeat; background-size: cover; background-position: center; text-indent: -9999px;}
 
@@ -192,10 +192,10 @@
 .myPage .menuBox li:nth-child(4).active a::before{background-image: url('../images/mypage_menu04_active.png');}
 .myPage .menuBox li.active a[data-count]:not([data-count='0']):after{color: white; background-color: black;}
 
-.myPage section > [class$="Area"]{background-color: #f5f5f5; height: 705px;}
+.myPage section > [class$="Area"]{background-color: #f5f5f5; height: 705px; border: 1px solid #e0e0e0;}
+.myPage .paddingBox{padding: 50px 0 50px; box-sizing: border-box;}
 
 /* 마이페이지 - 회원정보 */
-.myPage .memberArea{padding: 50px 0 50px; box-sizing: border-box;}
 .myPage .memberArea > div{width: 765px; margin: 0 auto; background-color: white; padding: 50px; box-sizing: border-box;}
 .myPage .memberArea > div strong{display: block; font-size: 20px; font-weight: 800; margin-bottom: 20px;}
 .myPage .memberArea > div > div{padding: 40px 0 50px; border-width: 1px 0; border-style: solid; border-color: #ebebeb; margin-bottom: 30px;}
@@ -212,6 +212,17 @@
 .myPage .memberArea > div > div > ul li p{width: 350px; }
 
 
-/* 마이페이지 -  */
+/* 마이페이지 - 문의 */
+.myPage .quesArea ul{width: 660px; margin: 0 auto;}
+.myPage .quesArea ul::after{content: ''; display: block; clear: both;}
+.myPage .quesArea ul li{float: left; width: 150px; text-align: center;}
+.myPage .quesArea ul li:not(:last-child){margin-right: 20px;}
+.myPage .quesArea ul li a{display: block; width: 100%; padding: 105px 0 30px; font-weight: bold; background-color: white; background-repeat: no-repeat; background-position: center top 45px;}
+.myPage .quesArea ul li:nth-child(1) a{background-image: url('../images/mypage_question01.png');}
+.myPage .quesArea ul li:nth-child(2) a{background-image: url('../images/mypage_question02.png');}
+.myPage .quesArea ul li:nth-child(3) a{background-image: url('../images/mypage_question03.png');}
+.myPage .quesArea ul li:nth-child(4) a{background-image: url('../images/mypage_question04.png');}
+
+
 
 
