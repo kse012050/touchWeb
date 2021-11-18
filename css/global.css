@@ -3,6 +3,10 @@
 .width1200{width: 1200px; margin: 0 auto;}
 
 .mainPage{padding-top: 130px;}
+.subPage > [class *="Area"]{padding: 200px 0 70px;}
+
+mark{color: #ff9900; background-color: transparent;}
+mark > *{color: #ff9900;}
 
 [class="material-icons-outlined"]{font-family: 'Material Icons';}
 
