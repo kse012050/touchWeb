@@ -10,6 +10,7 @@
 mark{color: #ff9900; background-color: transparent;}
 mark > *{color: #ff9900;}
 
+.blackBtn{display: block; margin: 0 auto; width: 125px; line-height: 45px; background-color: black; font-size: 18px; font-weight: 800; color: white; text-align: center;}
 [class*="material-icons-outlined"]{font-family: 'Material Icons';}
 
 /* 아이콘 */
