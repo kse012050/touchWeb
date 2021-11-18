@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div class="subPage">
+    <div class="subPage loginPage">
         <header>
             <div class="width1200">
                 <h1><img src="images/logo.png" alt="logo"><small>목포대</small></h1>
@@ -86,11 +86,11 @@
                         </li>
                         <li>
                             <label for="">비밀번호</label>
-                            <input type="text" placeholder="비밀번호">
+                            <input type="password" placeholder="비밀번호">
                         </li>
                         <li>
                             <label for="">비밀번호 확인</label>
-                            <input type="text" placeholder="비밀번호 확인">
+                            <input type="password" placeholder="비밀번호 확인">
                         </li>
                         <li>
                             <label for="">이름</label>
@@ -99,19 +99,19 @@
                         <li>
                             <label for="">생년월일</label>
                             <div>
-                                <input type="text" placeholder="년(4자)" maxlength="4">
+                                <input type="text" placeholder="년(4자)" >
                                 <select>
-                                    <option value=""></option>
+                                    <option value="">월</option>
                                 </select>
                                 <select>
-                                    <option value=""></option>
+                                    <option value="">일</option>
                                 </select>
                             </div>
                         </li>
                         <li>
                             <label for="">성별</label>
                             <select>
-                                <option value=""></option>
+                                <option value="">남</option>
                             </select>
                         </li>
                         <li>
@@ -121,9 +121,10 @@
                         <li>
                             <label for="">이메일 주소</label>
                             <div>
-                                <input type="text" placeholder="">
+                                <input type="text" placeholder="이메일 주소를 입력해주세요">
                                 <button>인증번호 받기</button>
                             </div>
+                            <input type="text" placeholder="인증번호를 입력해주세요">
                         </li>
                     </ul>
                     <input type="submit" value="가입하기">

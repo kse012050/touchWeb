@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video,button ,input:not([type="password"]) , input[type="password"]::placeholder{
+time, mark, audio, video,button ,input:not([type="password"]),input[type="password"]::placeholder{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,6 +24,7 @@ time, mark, audio, video,button ,input:not([type="password"]) , input[type="pass
 	font-family: 'NanumSquare';
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
