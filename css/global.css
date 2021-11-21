@@ -3,7 +3,7 @@
 .width1200{width: 1200px; margin: 0 auto;}
 
 .mainPage{padding-top: 130px;}
-.subPage > [class *="Area"]{padding: 200px 0 70px;}
+.mypage > [class *="Area"]{padding: 200px 0 70px;}
 
 .hidden{height: 0.001px; overflow: hidden;}
 
