@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>원룸</title>
+    <title>원룸 상세페이지 - toch</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
@@ -75,32 +75,240 @@
             </div>
         </header>
 
-        <section>
+        <section class="detailArea width1200">
             <h2 class="hidden">원룸</h2>
-            <table></table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <strong>
+                                    월세 <b>200 / 40만원</b>
+                                </strong>
+                            </div>
+                        </td>
+                        <td colspan="2">
+                            <div>
+                                <p>
+                                    <small>전용면적</small>
+                                    76.03m2 (N평)
+                                </p>
+                            </div>
+                        </td>
+                        <td colspan="4">
+                            <div>
+                                <p>
+                                    <small>한달 예상 주거비</small>
+                                    <mark>40만원 + a</mark>
+                                </p>
+                                <button>연락처 보기</button>
+                                <button>공유하기</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>해당층/건물층</th>
+                        <td>1층 / 4층</td>
+                        <th>전용/공급면적</th>
+                        <td>120 / 30</td>
+                        <th>방 / 욕실 수</th>
+                        <td>1개 / 1개</td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>난방종류</th>
+                        <td>도시가스</td>
+                        <th>옵션 수</th>
+                        <td>5개</td>
+                        <th>건물 주차수</th>
+                        <td>총 4대</td>
+                        <th>세대당 주차수</th>
+                        <td>0.4대</td>
+                    </tr>
+                    <tr>
+                        <th>엘리베이터</th>
+                        <td>없음</td>
+                        <th></th>
+                        <td></td>
+                        <th>주용도</th>
+                        <td>오피스텔</td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>완공일</th>
+                        <td>2019.08.11</td>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
             <ul>
                 <li>
-                    <div class="imgBox"></div>
+                    <div class="imgBox" style="background-image: url('images/oneroom_detailImg01.png');"></div>
                     <a href="#">더보기</a>
                 </li>
                 <li>
-                    <div class="imgBox"></div>
+                    <div class="imgBox" style="background-image: url('images/oneroom_detailImg02.png');"></div>
                     <a href="#">더보기</a>
                 </li>
                 <li>
-                    <div class="imgBox"></div>
+                    <div class="imgBox" style="background-image: url('images/oneroom_detailImg03.png');"></div>
                     <a href="#">더보기</a>
                 </li>
                 <li>
-                    <div class="imgBox"></div>
+                    <div class="imgBox" style="background-image: url('images/oneroom_detailImg01.png');"></div>
                     <a href="#">더보기</a>
                 </li>
             </ul>  
 
             <div>
                 <h3>옵션</h3>
+                <ul class="optionBox">
+                    <li><img src="images/oneroom_option01.png" alt="에어컨">에어컨</li>
+                    <li><img src="images/oneroom_option02.png" alt="세탁기">세탁기</li>
+                    <li><img src="images/oneroom_option03.png" alt="냉장고">냉장고</li>
+                    <li><img src="images/oneroom_option04.png" alt="책상">책상</li>
+                    <li><img src="images/oneroom_option05.png" alt="옷장">옷장</li>
+                    <li><img src="images/oneroom_option06.png" alt="신발장">신발장</li>
+                    <li><img src="images/oneroom_option07.png" alt="인덕션">인덕션</li>
+                    <li><img src="images/oneroom_option08.png" alt="전자도어락">전자도어락</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>보안/안전 시설</h3>
+                <ul class="optionBox">
+                    <li><img src="images/oneroom_option09.png" alt="비디오폰">비디오폰</li>
+                    <li><img src="images/oneroom_option10.png" alt="공동현관">공동현관</li>
+                    <li><img src="images/oneroom_option11.png" alt="CCTV">CCTV</li>
+                    <li><img src="images/oneroom_option12.png" alt="화재경보기">화재경보기</li>
+                    <li><img src="images/oneroom_option13.png" alt="가스누출경보기">가스누출경보기</li>
+                </ul>
+            </div>
+
+            <div class="reviewArea">
+                <h3>실거주자 리뷰</h3>
+                <button>리뷰작성</button>
                 <ul>
-                    <li></li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_user01.png);">
+                            사용자 이미지
+                        </div>
+                        <div class="textArea">
+                            <b>홍길동</b>
+                            <time>1월 1일</time>
+                            <div class="scopeArea">
+                                <img src="images/filledStar.png" alt="">
+                                <img src="images/filledStar.png" alt="">
+                                <img src="images/filledStar.png" alt="">
+                                <img src="images/filledStar.png" alt="">
+                                <img src="images/emptyStar.png" alt="">
+                            </div>
+                            <p>잘 살다 갑니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_user02.png);">
+                            사용자 이미지
+                        </div>
+                        <div class="textArea">
+                            <b>홍길동</b>
+                            <time>1월 1일</time>
+                            <div class="scopeArea">
+                                <img src="images/filledStar.png" alt="">
+                                <img src="images/emptyStar.png" alt="">
+                                <img src="images/emptyStar.png" alt="">
+                                <img src="images/emptyStar.png" alt="">
+                                <img src="images/emptyStar.png" alt="">
+                            </div>
+                            <p>잘 살다 갑니다.</p>
+                        </div>
+                        <div class="imgArea">
+                            <div class="imgBox" style="background-image: url(images/oneroom_userImg.png);">
+                                사용자가 올린 사진
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pageBox">
+                    <a href="#"><mark>&lt;</mark>이전</a>
+                    <ol>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                    </ol>
+                    <a href="#">다음<mark>&gt;</mark></a>
+                </div>
+            </div>
+
+            <div class="differentArea">
+                <h3>다른 방 둘러보기</h3>
+                <ul>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_detailOne01.png);">
+                            다른 원룸 방 이미지
+                        </div>
+                        <p>
+                            <strong>월세 40만원</strong>
+                            원룸
+                        </p>
+                        <small>2층 18평, 관리비 60만</small>
+                        <small>목포대 다이소 근처</small>
+                    </li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_detailOne02.png);">
+                            다른 원룸 방 이미지
+                        </div>
+                        <p>
+                            <strong>월세 40만원</strong>
+                            원룸
+                        </p>
+                        <small>2층 18평, 관리비 60만</small>
+                        <small>목포대 다이소 근처</small>
+                    </li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_detailOne03.png);">
+                            다른 원룸 방 이미지
+                        </div>
+                        <p>
+                            <strong>월세 40만원</strong>
+                            원룸
+                        </p>
+                        <small>2층 18평, 관리비 60만</small>
+                        <small>목포대 다이소 근처</small>
+                    </li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_detailOne04.png);">
+                            다른 원룸 방 이미지
+                        </div>
+                        <p>
+                            <strong>월세 40만원</strong>
+                            원룸
+                        </p>
+                        <small>2층 18평, 관리비 60만</small>
+                        <small>목포대 다이소 근처</small>
+                    </li>
+                    <li>
+                        <div class="imgBox" style="background-image: url(images/oneroom_detailOne05.png);">
+                            다른 원룸 방 이미지
+                        </div>
+                        <p>
+                            <strong>월세 40만원</strong>
+                            원룸
+                        </p>
+                        <small>2층 18평, 관리비 60만</small>
+                        <small>목포대 다이소 근처</small>
+                    </li>
                 </ul>
             </div>
         </section>

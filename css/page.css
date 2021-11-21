@@ -300,7 +300,7 @@
 
 /* 원룸 페이지 리스트 상단 */
 .oneRoomArea .contArea .listArea .topArea > p{font-size: 20px; line-height: 74px; padding: 0 20px;}
-.oneRoomArea .contArea .listArea .topArea > select{position: absolute; right: 20px; top: 16px; width: 130px; height: 40px; border: 1px solid #cacaca; padding: 0 10px;}
+.oneRoomArea .contArea .listArea .topArea > select{position: absolute; right: 20px; top: 16px; width: 130px; height: 40px; border: 1px solid #cacaca; padding: 0 10px; background: url('../images/oneroom_selectIcon.png') no-repeat right 10px top 15px;}
 .oneRoomArea .contArea .listArea .topArea .suggestionArea{display: flex; align-items: center; border-width: 1px 0; border-style: solid; border-color: #dadada;}
 .oneRoomArea .contArea .listArea .topArea .suggestionArea .imgArea{width: 260px; height: 177px; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
 .oneRoomArea .contArea .listArea .topArea .suggestionArea .imgArea .imgBox{width: calc((100% - 1px) / 2); height: calc((100% - 1px) / 2);}
@@ -322,3 +322,74 @@
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea div span{font-size: 15px; line-height: 30px; padding: 0 10px; background-color: #ffefd8;}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea div span::before{content: '#';}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea div span:not(:last-child){margin-right: 10px;}
+
+
+/* 원룸 - 상세페이지 */
+.oneRoomPage .detailArea h3{font-size: 26px; font-weight: 800; margin-bottom: 20px;}
+.oneRoomPage .detailArea > *:not(:first-child){margin-bottom: 80px;}
+
+/* 원룸 - 상세페이지 - 테이블 */
+.oneRoomPage .detailArea{margin-bottom: 40px;}
+.oneRoomPage .detailArea table{width: 100%; border: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea table tr:first-child > *{height: 80px;}
+.oneRoomPage .detailArea table tr:first-child > * > *{height: 80px; display: flex; align-items: center; padding: 0 20px;}
+.oneRoomPage .detailArea table tr:not(:first-child){line-height: 55px; text-align: center; border-top: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea table tr:not(:first-child) > *{width: 12.5%;}
+.oneRoomPage .detailArea table tr > *:not(:last-child){border-right: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea table tr th{background-color: #f0f0f0;}
+.oneRoomPage .detailArea table tr td{background-color: #f5f5f5;}
+
+.oneRoomPage .detailArea table tr:first-child td:last-child > *{justify-content: flex-end;}
+.oneRoomPage .detailArea table tr:first-child td:last-child > * p{margin-right: auto;}
+
+.oneRoomPage .detailArea table tr:first-child > * strong{font-size: 26px; font-weight: 800;}
+.oneRoomPage .detailArea table tr:first-child > * strong b{font-size: 20px; display: inline-block; margin-left: 15px;}
+.oneRoomPage .detailArea table tr:first-child > * p{font-size: 18px;}
+.oneRoomPage .detailArea table tr:first-child > * p small{font-size: 14px; color: #555555; display: block; margin-bottom: 10px;}
+.oneRoomPage .detailArea table tr:first-child > * p mark{color: #df2c27;}
+.oneRoomPage .detailArea table tr:first-child > * button{width: 145px; height: 45px; border: 1px solid #d2d2d2; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #888888;}
+.oneRoomPage .detailArea table tr:first-child > * button::before{content: ''; width: 20px; height: 25px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 12px;} 
+.oneRoomPage .detailArea table tr:first-child > * button:nth-of-type(1)::before{background-image: url('../images/oneroom_detailBtn01.png');}
+.oneRoomPage .detailArea table tr:first-child > * button:nth-of-type(2)::before{background-image: url('../images/oneroom_detailBtn02.png');}
+.oneRoomPage .detailArea table tr:first-child > * button:not(:last-of-type){margin-right: 10px;}
+
+/* 원룸 - 상세페이지 - 옵션 */
+.oneRoomPage .detailArea > ul{display: flex; flex-wrap: wrap; border: 1px solid #b8b8b8;}
+.oneRoomPage .detailArea > ul li{width: calc((100% - 1px) / 2); height: 400px; position: relative;}
+.oneRoomPage .detailArea > ul li:nth-child(2n + 1){border-right: 1px solid #b8b8b8;}
+.oneRoomPage .detailArea > ul li .imgBox{height: 100%;}
+.oneRoomPage .detailArea > ul li a{position: absolute; left: calc(50% - 75px); top: calc(50% - 25px); width: 150px; height: 50px; display: none; justify-content: center; align-items: center; z-index: 1; background-color: black; color: white;}
+.oneRoomPage .detailArea > ul li a::after{content: '+'; font-weight: 900; margin-left: 30px;}
+.oneRoomPage .detailArea > ul li:hover .imgBox{filter: blur(10px);}
+.oneRoomPage .detailArea > ul li:hover a{display: flex;}
+
+.oneRoomPage .detailArea .optionBox{display: flex; flex-wrap: wrap; padding: 40px 50px; border: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea .optionBox li{padding: 0 30px; display: flex; flex-direction: column; align-items: center;}
+.oneRoomPage .detailArea .optionBox li img{margin-bottom: 20px;}
+
+/* 원룸 - 상세페이지 - 실거주자 리뷰 */
+.oneRoomPage .detailArea .reviewArea{position: relative;}
+.oneRoomPage .detailArea .reviewArea > button{display: flex; justify-content: center; align-items: center; width: 125px; height: 45px; border: 1px solid #d2d2d2; position: absolute; right: 0; top: -9px; font-size: 18px; font-weight: 700; color: #888888;}
+.oneRoomPage .detailArea .reviewArea > button::before{content: ''; width: 26px; height: 20px; background: url('../images/oneroom_detailBtn03.png') no-repeat center / cover;}
+.oneRoomPage .detailArea .reviewArea > ul{border: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea .reviewArea > ul li{padding:20px 30px; background-color: #f5f5f5; display: flex; }
+.oneRoomPage .detailArea .reviewArea > ul li:not(:last-child){border-bottom: 1px solid #e0e0e0;}
+.oneRoomPage .detailArea .reviewArea > ul li > .imgBox{width: 60px; height: 60px; border-radius: 100%; border: 1px solid #b9b9b9;}
+.oneRoomPage .detailArea .reviewArea > ul li .textArea{height: 60px; flex: 1;display: flex; flex-wrap: wrap; align-items: center; align-content: space-between; margin: 0 15px; padding: 5px 0; box-sizing: border-box;}
+.oneRoomPage .detailArea .reviewArea > ul li .textArea b{font-size: 18px; font-weight: 700;}
+.oneRoomPage .detailArea .reviewArea > ul li .textArea time{font-size: 14px; color: #555555; margin-left: 13px;}
+.oneRoomPage .detailArea .reviewArea > ul li .textArea p{width: 100%;}
+.oneRoomPage .detailArea .reviewArea > ul li .textArea .scopeArea{margin-left: 13px;}
+.oneRoomPage .detailArea .reviewArea > ul li .imgArea{margin-left: auto;}
+.oneRoomPage .detailArea .reviewArea > ul li .imgArea .imgBox{width: 200px; height: 135px; border: 1px solid #b8b8b8;}
+
+/* 원룸 - 상세페이지 - 다른 방 둘러보기 */
+.oneRoomPage .detailArea .differentArea ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.oneRoomPage .detailArea .differentArea ul li{width: 230px;}
+.oneRoomPage .detailArea .differentArea ul li .imgBox{width: 100%; height: 155px; border: 1px solid #b8b8b8; margin-bottom: 18px;}
+.oneRoomPage .detailArea .differentArea ul li p{margin-bottom: 15px;}
+.oneRoomPage .detailArea .differentArea ul li p strong{display: block; font-size: 20px; font-weight: 800; margin-bottom: 10px;}
+.oneRoomPage .detailArea .differentArea ul li small{display: block; font-size: 14px; color: #888888; line-height: 20px;}
+
+
+
