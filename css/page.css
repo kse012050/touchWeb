@@ -409,11 +409,7 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .oneRoomPage .registrationArea .imgRegiBox + div{border-width: 0 1px 1px 1px; border-style: solid; border-color: #e0e0e0; padding: 30px 0; text-align: center;}
 .oneRoomPage .registrationArea .imgRegiBox + div input[type="checkbox"]{display: none;}
 .oneRoomPage .registrationArea .imgRegiBox + div label{display: block; margin-bottom: 30px;}
-.oneRoomPage .registrationArea .imgRegiBox + div div{display: flex; justify-content: center;}
-.oneRoomPage .registrationArea .imgRegiBox + div div input:not(:last-of-type){margin-right: 10px;}
-.oneRoomPage .registrationArea .imgRegiBox + div div input{width: 125px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 700;}
-.oneRoomPage .registrationArea .imgRegiBox + div div input[type="reset"]{border: 1px solid #d2d2d2; color: #888888; background-color: transparent;}
-.oneRoomPage .registrationArea .imgRegiBox + div div input[type="submit"]{background-color: black; color: white;}
+
 
 
 
@@ -480,13 +476,13 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 
 
 /* 중고거래 - 게시판 - 사이드 */
-.usedTradePage .detailArea aside .boardArea ul li a{ display: block; position: relative;}
-.usedTradePage .detailArea aside .boardArea ul li:not(:last-child) a{padding-bottom: 20px; border-bottom: 1px solid #efefef;}
-.usedTradePage .detailArea aside .boardArea ul li:not(:first-child) a{padding-top: 20px;}
-.usedTradePage .detailArea aside .boardArea ul li a b{display: block; font-weight: 700; margin-bottom: 10px;}
-.usedTradePage .detailArea aside .boardArea ul li a b span{display: block; font-size: 14px; font-weight: 400; margin: 10px 0 15px; }
-.usedTradePage .detailArea aside .boardArea ul li a p{font-size: 14px; line-height: 20px; color: #888888;}
-.usedTradePage .detailArea aside .boardArea ul li a .iconBox{position: absolute; right: 0; bottom: 20px;}
+/* .subPage aside .boardArea ul li a{ display: block; position: relative;}
+.subPage aside .boardArea ul li:not(:last-child) a{padding-bottom: 20px; border-bottom: 1px solid #efefef;}
+.subPage aside .boardArea ul li:not(:first-child) a{padding-top: 20px;}
+.subPage aside .boardArea ul li a b{display: block; font-weight: 700; margin-bottom: 10px;}
+.subPage aside .boardArea ul li a b span{display: block; font-size: 14px; font-weight: 400; margin: 10px 0 15px; }
+.subPage aside .boardArea ul li a p{font-size: 14px; line-height: 20px; color: #888888;}
+.subPage aside .boardArea ul li a .iconBox{position: absolute; right: 0; bottom: 20px;} */
 
 
 /* 중고거래 - 등록 */
@@ -509,3 +505,42 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox{margin-bottom: 20px;}
 .usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox .fileArea > *{margin-right: 20px;}
 .usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox .fileArea > *:not(:nth-child(-n + 15)){margin-top: 20px;}
+
+
+/* 커뮤니티 공통 */
+.communityPage input[type='text'],
+.communityPage textarea{color: #888888; padding:10px; border: 1px solid #cacaca; box-sizing: border-box;}
+.communityPage input[type='text']{height: 40px;}
+
+.communityPage .writeBox{display: flex; margin-bottom: 30px;}
+.communityPage .writeBox input{width: 775px;}
+.communityPage .writeBox button{width: 115px; height: 40px; color: #ff9900; font-weight: 700; border: 1px solid #ff9900; display: flex; justify-content: center; align-items: center;}
+.communityPage .writeBox button::before{content: ''; width: 26px; height: 20px; background: url('../images/writeIcon.png') no-repeat center / cover; margin-right: 13px;}
+
+.communityPage .commuListBox{padding: 10px 20px; border: 1px solid #e0e0e0;}
+.communityPage .commuListBox li{padding: 10px 0;}
+.communityPage .commuListBox li:not(:last-child){border-bottom: 1px solid #e0e0e0;}
+.communityPage .commuListBox li a{display: flex; position: relative;}
+.communityPage .commuListBox li a > .imgBox{width: 165px; height: 105px; border: 1px solid #b8b8b8; margin-right: 20px;}
+.communityPage .commuListBox li a .textArea{padding: 10px 0; min-height: 90px; display: flex; flex-direction: column;}
+.communityPage .commuListBox li a .textArea strong{font-size: 18px; font-weight: 700; margin-bottom: 10px;}
+.communityPage .commuListBox li a .textArea .iconBox{margin-top: auto;}
+.communityPage .commuListBox li a .writerArea{position: absolute; right: 0; bottom: 0; display: flex; align-items: center;}
+.communityPage .commuListBox li a .writerArea time{font-size: 12px; color: #888888; margin-right: 10px;}
+.communityPage .commuListBox li a .writerArea b{font-size: 14px;}
+
+.communityPage .seachBox{margin: 70px auto 0;}
+
+/* 커뮤니티 */
+
+/* 커뮤니티 - 글쓰기 */
+.communityPage .inputBox{margin-bottom: 30px;}
+.communityPage .inputBox fieldset{padding: 20px; border: 1px solid #e0e0e0;}
+.communityPage .inputBox fieldset > *{width: 100%;}
+.communityPage .inputBox fieldset > *:not(:first-child):not(:last-child){margin-top: 10px;}
+.communityPage .inputBox fieldset textarea{height: 495px;}
+.communityPage .inputBox fieldset .imgRegiBox{padding: 20px; border: 1px solid #cacaca; box-sizing: border-box;}
+.communityPage .inputBox fieldset .imgRegiBox .fileArea > *{margin-right: 20px;}
+.communityPage .inputBox fieldset .imgRegiBox .fileArea > *:not(:nth-child(-n + 10)){margin-top: 20px;}
+
+.communityPage .formBtn {margin-top: 30px;}
