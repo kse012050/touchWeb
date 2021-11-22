@@ -6,14 +6,25 @@
 .loginPage > [class *="Area"]{padding: 200px 0 70px;}
 .myPage > [class *="Area"]{padding: 200px 0 70px;}
 .oneRoomPage > [class *="Area"]:not(.oneRoomArea){padding: 130px 0 70px;}
+.usedTradePage > [class *="Area"]{padding: 160px 0 70px;}
 
 .hidden{height: 0.001px; overflow: hidden;}
 
 mark{color: #ff9900; background-color: transparent;}
 mark > *{color: #ff9900;}
 
+/* 검은 버튼 */
 .blackBtn{display: block; margin: 0 auto; width: 125px; line-height: 45px; background-color: black; font-size: 18px; font-weight: 800; color: white; text-align: center;}
+/* 작성 버튼 */
+.writeBtn{display: flex; justify-content: center; align-items: center; width: 125px; height: 45px; border: 1px solid #d2d2d2; position: absolute; right: 0; top: -9px; font-size: 18px; font-weight: 700; color: #888888;}
+.writeBtn::before{content: ''; width: 26px; height: 20px; background: url('../images/oneroom_detailBtn03.png') no-repeat center / cover; margin-right: 10px;}
+
 [class*="material-icons-outlined"]{font-family: 'Material Icons';}
+
+/* 검색 */
+.seachBox{position: relative; height: 45px;}
+.seachBox input{width: 323px; height: 100%; border: 2px solid #ff9900; box-sizing: border-box;}
+.seachBox button{position: absolute; top:12px; right: 11px; width: 19px; height: 19px; background: url('../images/oneroom_search.png') no-repeat center / cover;}
 
 /* 페이저 */
 .pageBox{display: flex; justify-content: center; align-items: center; margin-top: 20px;}
@@ -35,6 +46,19 @@ mark > *{color: #ff9900;}
 .imgRegiBox > .fileArea label{display: flex; justify-content: center; align-items: center; color: #ababab; font-weight: 900; background-color: #f5f5f5;}
 .imgRegiBox > .fileArea .imgBox{position: relative;}
 .imgRegiBox > .fileArea .imgBox .removeBtn{position: absolute; right: -6px; top: -6px; width: 20px; line-height: 20px; text-align: center; background-color: black; border-radius: 100%; font-size: 20px; color: white; font-weight: 900;}
+
+/* 중고거래 */
+.usedTradeBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.usedTradeBox li a{width: 100%; margin-bottom: 20px;}
+.usedTradeBox li a .imgBox{width: 100%; margin-bottom: 20px;}
+.usedTradeBox li > div{display: flex; align-items: center;}
+.usedTradeBox li > div span.material-icons-outlined{font-size: 22px;}
+.usedTradeBox li > div .imgBox{cursor: pointer;}
+.usedTradeBox li > div .imgBox.heartIcon{width: 22px; height: 19px; background-image: url('../images/heartIcon.png');}
+.usedTradeBox li > div .imgBox.heartIcon.active{background-image: url('../images/heartIcon_active.png');}
+.usedTradeBox li > div .imgBox.mailIcon{width: 18px; height: 18px; background-image: url('../images/mailIcon02.png');}
+.usedTradeBox li > div span:not(.material-icons-outlined){font-size: 14px; margin-left: 5px;}
+.usedTradeBox li > div span:not(.material-icons-outlined):not(:last-child){margin-right: 15px;}
 
 
 /* 팝업 */
