@@ -392,4 +392,62 @@
 .oneRoomPage .detailArea .differentArea ul li small{display: block; font-size: 14px; color: #888888; line-height: 20px;}
 
 
+/* 원룸 - 등록 */
+.oneRoomPage .registrationArea fieldset:not(:last-of-type){margin-bottom: 80px;}
+.oneRoomPage .registrationArea fieldset legend{font-size: 26px; font-weight: 800; margin-bottom: 20px;}
+.oneRoomPage .registrationArea fieldset input[type="checkbox"]:not([class]) + label{display: inline-flex;}
+.oneRoomPage .registrationArea fieldset input[type="checkbox"]:not([class]) + label::before{content: ''; width: 18px; height: 18px; background-image: url('../images/chk01.png'); background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 10px;}
+.oneRoomPage .registrationArea fieldset input[type="checkbox"]:not([class]):checked + label::before{background-image: url('../images/chk01_active.png');}
 
+.oneRoomPage .registrationArea .inputArea > div:not(:last-child){margin-bottom: 40px;}
+.oneRoomPage .registrationArea .inputArea > div{border: 1px solid #e0e0e0;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div{display: flex; text-align: center;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div:not(:last-child){border-bottom: 1px solid #e0e0e0;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > label{width: 150px; line-height: 55px; color: #555555; background-color: #f0f0f0; border-right: 1px solid #e0e0e0;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div{flex: 1; padding: 7px; background-color: #f5f5f5; display: flex; align-items: center;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div input[type="radio"]{display: none;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div input[type="radio"] + label{width: 130px; line-height: 40px; border: 1px solid #cacaca; box-sizing: border-box; background-color: white;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div > input[type="radio"]:not(:last-child) + label{margin-right: 5px;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div input[type="radio"]:checked + label{color: white; font-weight: 800; background-color: #ff9900;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div .checkList{display: none;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div .checkList + label{width: 130px; line-height: 40px; border: 1px solid #cacaca; box-sizing: border-box; background-color: white;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div > .checkList:not(:last-child) + label{margin-right: 5px;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div .checkList:checked + label{color: white; font-weight: 800; background-color: #ff9900;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div input[type="text"]{width: 130px; line-height: 40px; border: 1px solid #cacaca; box-sizing: border-box; background-color: white; text-align: center;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div input[type="text"] ~ input[type="checkbox"]{margin-left: 30px;}
+.oneRoomPage .registrationArea .inputArea > div:not([class]) > div > div span{margin: 0 10px;}
+
+.oneRoomPage .registrationArea .inputArea .addrArea{display: flex; text-align: left;}
+.oneRoomPage .registrationArea .inputArea .addrArea > label{width: 150px; line-height: 55px; color: #555555; background-color: #f0f0f0; border-right: 1px solid #e0e0e0; display: flex; justify-content: center; align-items: center;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div{flex: 1; padding: 7px; background-color: #f5f5f5;  flex-wrap: wrap;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div input{width: 400px; height: 40px; border: 1px solid #cacaca; padding: 0 10px;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div div{}
+.oneRoomPage .registrationArea .inputArea .addrArea > div > *:not(:last-child){margin-bottom: 7px;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div .topArea{display: flex;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div .topArea button{width: 130px; height: 40px; background-color: black; color: white; margin-left: 5px;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div .centerArea{width: 535px; height: 90px; border: 1px solid #cacaca;; background-color: white; display: flex; flex-direction: column; justify-content: center; padding: 10px;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div .centerArea dl{display: flex;}
+.oneRoomPage .registrationArea .inputArea .addrArea > div .centerArea dl:not(:last-child){margin-bottom: 15px;}
+
+
+.imgRegiBox{border: 1px solid #e0e0e0;}
+.imgRegiBox > div:not(:last-child){border-bottom: 1px solid #e0e0e0;}
+.imgRegiBox > .textArea{padding: 15px 20px; }
+.imgRegiBox > .textArea p{line-height: 28px;}
+
+.imgRegiBox > .fileArea{padding: 30px 10px; display: flex; flex-wrap: wrap;}
+.imgRegiBox > .fileArea > *{margin: 0 10px;}
+.imgRegiBox > .fileArea input{display: none;}
+.imgRegiBox > .fileArea label ,.imgRegiBox > .fileArea .imgBox {width: 65px; height: 65px; border: 1px solid #b8b8b8;}
+.imgRegiBox > .fileArea label{display: flex; justify-content: center; align-items: center; color: #ababab; font-weight: 900; background-color: #f5f5f5;}
+.imgRegiBox > .fileArea .imgBox{position: relative;}
+.imgRegiBox > .fileArea .imgBox .closeBtn{position: absolute; right: -6px; top: -6px; width: 20px; line-height: 20px; text-align: center; background-color: black; border-radius: 100%; font-size: 20px; color: white; font-weight: 900;}
+
+.imgRegiBox + div{border-width: 0 1px 1px 1px; border-style: solid; border-color: #e0e0e0; padding: 30px 0; text-align: center;}
+.imgRegiBox + div input[type="checkbox"]{display: none;}
+.imgRegiBox + div label{display: block; margin-bottom: 30px;}
+.imgRegiBox + div div{display: flex; justify-content: center;}
+.imgRegiBox + div div input:not(:last-of-type){margin-right: 10px;}
+.imgRegiBox + div div input{width: 125px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 700;}
+.imgRegiBox + div div input[type="reset"]{border: 1px solid #d2d2d2; color: #888888; background-color: transparent;}
+.imgRegiBox + div div input[type="submit"]{background-color: black; color: white;}
