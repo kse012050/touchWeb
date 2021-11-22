@@ -36,7 +36,7 @@
             })
 
             $('[data-popup="moreImg_popup"]').click(function(){
-                $('.slider').bxSlider();
+                $('.moreImg_popup .slider').bxSlider();
                 var popupArea = $(this).siblings('.' + $(this).attr('data-popup'));
                 if(popupArea.length == 0){
                     popupArea = $('.' + $(this).attr('data-popup'));
