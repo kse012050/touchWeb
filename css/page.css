@@ -471,7 +471,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .usedTradePage .detailArea .realTimeArea .usedTradeBox li a .imgBox{height: 145px;}
 
 
-
 /* 중고거래 - 게시판 - 사이드 */
 .usedTradePage .detailArea aside .boardArea ul li a{ display: block; position: relative;}
 .usedTradePage .detailArea aside .boardArea ul li:not(:last-child) a{padding-bottom: 20px; border-bottom: 1px solid #efefef;}
@@ -480,3 +479,25 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .usedTradePage .detailArea aside .boardArea ul li a b span{display: block; font-size: 14px; font-weight: 400; margin: 10px 0 15px; }
 .usedTradePage .detailArea aside .boardArea ul li a p{font-size: 14px; line-height: 20px; color: #888888;}
 .usedTradePage .detailArea aside .boardArea ul li a .iconBox{position: absolute; right: 0; bottom: 20px;}
+
+
+/* 중고거래 - 등록 */
+.usedTradePage .registrationArea fieldset > div{padding-bottom: 40px;}
+.usedTradePage .registrationArea fieldset > div:not(:first-child){padding-top: 40px; border-top: 1px solid #ebebeb;}
+.usedTradePage .registrationArea fieldset > div input[type="text"]{height: 40px; border: 1px solid #cacaca; padding: 0 10px;}
+.usedTradePage .registrationArea fieldset > div strong{display: block; font-weight: 700; margin-bottom: 15px;}
+
+.usedTradePage .registrationArea fieldset > div:first-child input[type="text"]{width: 100%;}
+
+.usedTradePage .registrationArea fieldset > div:nth-child(2) input[type='text']{width: 600px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) input[type='text'] + span{display: inline-block; margin:0 10px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div:not(:last-of-type){margin-bottom: 40px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div{display: flex; align-items: center;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div label:not(:last-of-type){margin-right: 30px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div input[type="radio"] + label{display: inline-flex;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div input[type="radio"] + label::before{content: ''; width: 18px; height: 18px; background-image: url('../images/chk01.png'); background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 10px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(2) > div input[type="radio"]:checked + label::before{background-image: url('../images/chk01_active.png');}
+
+.usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox{margin-bottom: 20px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox .fileArea > *{margin-right: 20px;}
+.usedTradePage .registrationArea fieldset > div:nth-child(3) .imgRegiBox .fileArea > *:not(:nth-child(-n + 15)){margin-top: 20px;}

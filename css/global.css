@@ -14,7 +14,7 @@ mark{color: #ff9900; background-color: transparent;}
 mark > *{color: #ff9900;}
 
 /* 검은 버튼 */
-.blackBtn{display: block; margin: 0 auto; width: 125px; line-height: 45px; background-color: black; font-size: 18px; font-weight: 800; color: white; text-align: center;}
+.blackBtn:not([type="password"]){display: block; margin: 0 auto; width: 125px; line-height: 45px; background-color: black; font-size: 18px; font-weight: 800; color: white; text-align: center;}
 /* 작성 버튼 */
 .writeBtn{display: flex; justify-content: center; align-items: center; width: 125px; height: 45px; border: 1px solid #d2d2d2; position: absolute; right: 0; top: -9px; font-size: 18px; font-weight: 700; color: #888888;}
 .writeBtn::before{content: ''; width: 26px; height: 20px; background: url('../images/oneroom_detailBtn03.png') no-repeat center / cover; margin-right: 10px;}
