@@ -150,12 +150,7 @@
 .findArea > div fieldset > div{width: 580px; border: 1px solid #e0e0e0; padding: 50px 90px; box-sizing: border-box; text-align: center;}
 .findArea > div fieldset > div button{width: 125px; height: 45px; background-color: black; font-size: 18px; font-weight: 800; color: white;}
 
-.find_popup{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.8);}
-.find_popup.active{display: flex;}
-.find_popup > div{width: 360px; padding: 80px 20px 40px; background-color: white; box-sizing: border-box; position: relative;}
-.find_popup > div strong{display: block; font-size: 20px; font-weight: 800; text-align: left; margin-bottom: 20px;}
 
-.find_popup .closeBtn{position: absolute; right: 20px; top: 20px; font-size: 40px; cursor: pointer;}
 
 
 /* 회원가입 페이지 */
@@ -347,21 +342,21 @@
 .oneRoomPage .detailArea table tr:first-child > * p{font-size: 18px;}
 .oneRoomPage .detailArea table tr:first-child > * p small{font-size: 14px; color: #555555; display: block; margin-bottom: 10px;}
 .oneRoomPage .detailArea table tr:first-child > * p mark{color: #df2c27;}
-.oneRoomPage .detailArea table tr:first-child > * button{width: 145px; height: 45px; border: 1px solid #d2d2d2; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #888888;}
-.oneRoomPage .detailArea table tr:first-child > * button::before{content: ''; width: 20px; height: 25px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 12px;} 
-.oneRoomPage .detailArea table tr:first-child > * button:nth-of-type(1)::before{background-image: url('../images/oneroom_detailBtn01.png');}
-.oneRoomPage .detailArea table tr:first-child > * button:nth-of-type(2)::before{background-image: url('../images/oneroom_detailBtn02.png');}
-.oneRoomPage .detailArea table tr:first-child > * button:not(:last-of-type){margin-right: 10px;}
+.oneRoomPage .detailArea table tr:first-child > * > * > button{width: 145px; height: 45px; border: 1px solid #d2d2d2; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #888888;}
+.oneRoomPage .detailArea table tr:first-child > * > * > button::before{content: ''; width: 20px; height: 25px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 12px;} 
+.oneRoomPage .detailArea table tr:first-child > * > * > button:nth-of-type(1)::before{background-image: url('../images/oneroom_detailBtn01.png');}
+.oneRoomPage .detailArea table tr:first-child > * > * > button:nth-of-type(2)::before{background-image: url('../images/oneroom_detailBtn02.png');}
+.oneRoomPage .detailArea table tr:first-child > * > * > button:not(:last-of-type){margin-right: 10px;}
 
 /* 원룸 - 상세페이지 - 옵션 */
 .oneRoomPage .detailArea > ul{display: flex; flex-wrap: wrap; border: 1px solid #b8b8b8;}
 .oneRoomPage .detailArea > ul li{width: calc((100% - 1px) / 2); height: 400px; position: relative;}
 .oneRoomPage .detailArea > ul li:nth-child(2n + 1){border-right: 1px solid #b8b8b8;}
 .oneRoomPage .detailArea > ul li .imgBox{height: 100%;}
-.oneRoomPage .detailArea > ul li a{position: absolute; left: calc(50% - 75px); top: calc(50% - 25px); width: 150px; height: 50px; display: none; justify-content: center; align-items: center; z-index: 1; background-color: black; color: white;}
-.oneRoomPage .detailArea > ul li a::after{content: '+'; font-weight: 900; margin-left: 30px;}
+.oneRoomPage .detailArea > ul li button{position: absolute; left: calc(50% - 75px); top: calc(50% - 25px); width: 150px; height: 50px; display: none; justify-content: center; align-items: center; z-index: 1; background-color: black; color: white;}
+.oneRoomPage .detailArea > ul li button::after{content: '+'; font-weight: 900; margin-left: 30px;}
 .oneRoomPage .detailArea > ul li:hover .imgBox{filter: blur(10px);}
-.oneRoomPage .detailArea > ul li:hover a{display: flex;}
+.oneRoomPage .detailArea > ul li:hover button{display: flex;}
 
 .oneRoomPage .detailArea .optionBox{display: flex; flex-wrap: wrap; padding: 40px 50px; border: 1px solid #e0e0e0;}
 .oneRoomPage .detailArea .optionBox li{padding: 0 30px; display: flex; flex-direction: column; align-items: center;}
@@ -429,25 +424,20 @@
 .oneRoomPage .registrationArea .inputArea .addrArea > div .centerArea dl{display: flex;}
 .oneRoomPage .registrationArea .inputArea .addrArea > div .centerArea dl:not(:last-child){margin-bottom: 15px;}
 
+/* 원룸 - 등록 - 이미지 업로드*/
+.oneRoomPage .registrationArea .imgRegiBox{border: 1px solid #e0e0e0;}
+.oneRoomPage .registrationArea .imgRegiBox > div:not(:last-child){border-bottom: 1px solid #e0e0e0;}
+.oneRoomPage .registrationArea .imgRegiBox > .textArea{padding: 15px 20px; }
+.oneRoomPage .registrationArea .imgRegiBox > .textArea p{line-height: 28px;}
 
-.imgRegiBox{border: 1px solid #e0e0e0;}
-.imgRegiBox > div:not(:last-child){border-bottom: 1px solid #e0e0e0;}
-.imgRegiBox > .textArea{padding: 15px 20px; }
-.imgRegiBox > .textArea p{line-height: 28px;}
+.oneRoomPage .registrationArea .imgRegiBox > .fileArea{padding: 20px 10px;}
+.oneRoomPage .registrationArea .imgRegiBox > .fileArea > *{margin: 10px;}
 
-.imgRegiBox > .fileArea{padding: 30px 10px; display: flex; flex-wrap: wrap;}
-.imgRegiBox > .fileArea > *{margin: 0 10px;}
-.imgRegiBox > .fileArea input{display: none;}
-.imgRegiBox > .fileArea label ,.imgRegiBox > .fileArea .imgBox {width: 65px; height: 65px; border: 1px solid #b8b8b8;}
-.imgRegiBox > .fileArea label{display: flex; justify-content: center; align-items: center; color: #ababab; font-weight: 900; background-color: #f5f5f5;}
-.imgRegiBox > .fileArea .imgBox{position: relative;}
-.imgRegiBox > .fileArea .imgBox .closeBtn{position: absolute; right: -6px; top: -6px; width: 20px; line-height: 20px; text-align: center; background-color: black; border-radius: 100%; font-size: 20px; color: white; font-weight: 900;}
-
-.imgRegiBox + div{border-width: 0 1px 1px 1px; border-style: solid; border-color: #e0e0e0; padding: 30px 0; text-align: center;}
-.imgRegiBox + div input[type="checkbox"]{display: none;}
-.imgRegiBox + div label{display: block; margin-bottom: 30px;}
-.imgRegiBox + div div{display: flex; justify-content: center;}
-.imgRegiBox + div div input:not(:last-of-type){margin-right: 10px;}
-.imgRegiBox + div div input{width: 125px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 700;}
-.imgRegiBox + div div input[type="reset"]{border: 1px solid #d2d2d2; color: #888888; background-color: transparent;}
-.imgRegiBox + div div input[type="submit"]{background-color: black; color: white;}
+.oneRoomPage .registrationArea .imgRegiBox + div{border-width: 0 1px 1px 1px; border-style: solid; border-color: #e0e0e0; padding: 30px 0; text-align: center;}
+.oneRoomPage .registrationArea .imgRegiBox + div input[type="checkbox"]{display: none;}
+.oneRoomPage .registrationArea .imgRegiBox + div label{display: block; margin-bottom: 30px;}
+.oneRoomPage .registrationArea .imgRegiBox + div div{display: flex; justify-content: center;}
+.oneRoomPage .registrationArea .imgRegiBox + div div input:not(:last-of-type){margin-right: 10px;}
+.oneRoomPage .registrationArea .imgRegiBox + div div input{width: 125px; height: 45px; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 700;}
+.oneRoomPage .registrationArea .imgRegiBox + div div input[type="reset"]{border: 1px solid #d2d2d2; color: #888888; background-color: transparent;}
+.oneRoomPage .registrationArea .imgRegiBox + div div input[type="submit"]{background-color: black; color: white;}
