@@ -198,7 +198,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 
 
 /* 마이페이지 - 대화상자 */
-.tolkBox{}
 .tolkBox::after{content: ''; display: block; clear: both;}
 .tolkBox > *{float: left; height: 100%;}
 .tolkBox .tolkList{width: 298px; box-sizing: border-box; border-right: 1px solid #e0e0e0; overflow: hidden;}
@@ -249,9 +248,8 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 /* 원룸 */
 
 .oneRoomArea{padding-top: 121px;}
-.oneRoomArea .contArea{/* width: 1920px; margin: 0 auto; */ min-width: 1400px; height: calc((100vh - 121px)); display: flex;}
-/* .oneRoomArea .contArea::after{content: ''; display: block; clear: both;} */
-/* .oneRoomArea .contArea > *{float: left;} */
+.oneRoomArea .contArea{min-width: 1400px; height: calc((100vh - 121px)); display: flex;}
+
 
 /* 원룸 페이지 지도 */
 .oneRoomArea .contArea .mapArea{width: calc(100% - 720px); height: 100%; position: relative;}
@@ -286,7 +284,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .oneRoomArea .contArea .listArea .bottomArea ul li:not(:last-child){margin-bottom: 20px;}
 .oneRoomArea .contArea .listArea .bottomArea ul li a{display: flex; align-items: flex-end;}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .imgBox{ width: 240px; height: 160px; border: 1px solid #b8b8b8;}
-.oneRoomArea .contArea .listArea .bottomArea ul li a .textArea{}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea p:last-of-type{margin-bottom: 15px;}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea div{display: flex;}
 .oneRoomArea .contArea .listArea .bottomArea ul li a .textArea div span{font-size: 15px; line-height: 30px; padding: 0 10px; background-color: #ffefd8;}
@@ -389,7 +386,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .oneRoomPage .registrationArea .inputArea .addrArea > label{width: 150px; line-height: 55px; color: #555555; background-color: #f0f0f0; border-right: 1px solid #e0e0e0; display: flex; justify-content: center; align-items: center;}
 .oneRoomPage .registrationArea .inputArea .addrArea > div{flex: 1; padding: 7px; background-color: #f5f5f5;  flex-wrap: wrap;}
 .oneRoomPage .registrationArea .inputArea .addrArea > div input{width: 400px; height: 40px; border: 1px solid #cacaca; padding: 0 10px;}
-.oneRoomPage .registrationArea .inputArea .addrArea > div div{}
 .oneRoomPage .registrationArea .inputArea .addrArea > div > *:not(:last-child){margin-bottom: 7px;}
 .oneRoomPage .registrationArea .inputArea .addrArea > div .topArea{display: flex;}
 .oneRoomPage .registrationArea .inputArea .addrArea > div .topArea button{width: 130px; height: 40px; background-color: black; color: white; margin-left: 5px;}
@@ -433,15 +429,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 
 .usedTradePage .detailArea .goodsArea .userArea{padding: 45px 84px;}
 
-/* .usedTradePage .detailArea .goodsArea .userArea .userBox{display: flex;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox:not(:last-child){}
-.usedTradePage .detailArea .goodsArea .userArea .userBox > .imgBox{width: 45px; height: 45px; border-radius: 100%; border: 1px solid #b9b9b9; box-sizing: border-box;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea{flex: 1;display: flex; flex-wrap: wrap; align-items: center; align-content: space-between; margin: 0 15px; padding: 5px 0; box-sizing: border-box;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea b{font-weight: 700;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea small{width: 100%; font-size: 14px; color: #888888;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox.sellerArea .textArea time{font-size: 14px; color: #555555; margin-left: 13px;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea p{width: 100%;} */
-
 .usedTradePage .detailArea .goodsArea .userArea .sellerArea{margin-bottom: 15px; position: relative;}
 .usedTradePage .detailArea .goodsArea .userArea .sellerArea .iconBox{align-self: flex-end;}
 
@@ -454,19 +441,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .usedTradePage .detailArea .goodsArea .userArea .goodsInfo p{line-height: 26px;}
 .usedTradePage .detailArea .goodsArea .userArea .goodsInfo button{position: absolute; right: 0; top: 20px;}
 
-/* .usedTradePage .detailArea .goodsArea .userArea .inputArea{position: relative; margin-top: 40px;}
-.usedTradePage .detailArea .goodsArea .userArea .inputArea b{position: absolute; left: 20px; top: 20px; font-weight: 700;}
-.usedTradePage .detailArea .goodsArea .userArea .inputArea textarea{resize: none; width: 100%; height: 175px; padding: 50px 20px; box-sizing: border-box; border: 1px solid #e0e0e0; color: #888888;}
-.usedTradePage .detailArea .goodsArea .userArea .inputArea button{position: absolute; right: 20px; bottom: 20px; font-weight: 700;} */
-
-
-/* .usedTradePage .detailArea .goodsArea .commentBox strong{display: block; font-size: 18px; font-weight: 800; padding-top: 20px;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox img{align-self: flex-start; padding: 17px 19px 0 38px;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox{flex-wrap: wrap; padding: 20px 0;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox:not(:last-of-type){border-bottom: 1px solid #ebebeb;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox .textArea b{margin-bottom: 10px;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox .textArea time{width: 100%; font-size: 14px; color: #888888; margin-top: 15px;} */
-
 .usedTradePage .detailArea .realTimeArea > strong {display: block; font-size: 26px; font-weight: 800; margin-bottom: 20px;}
 .usedTradePage .detailArea .realTimeArea .usedTradeBox{justify-content: flex-start;}
 .usedTradePage .detailArea .realTimeArea .usedTradeBox li{width: 215px;}
@@ -476,13 +450,6 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 
 
 /* 중고거래 - 게시판 - 사이드 */
-/* .subPage aside .boardArea ul li a{ display: block; position: relative;}
-.subPage aside .boardArea ul li:not(:last-child) a{padding-bottom: 20px; border-bottom: 1px solid #efefef;}
-.subPage aside .boardArea ul li:not(:first-child) a{padding-top: 20px;}
-.subPage aside .boardArea ul li a b{display: block; font-weight: 700; margin-bottom: 10px;}
-.subPage aside .boardArea ul li a b span{display: block; font-size: 14px; font-weight: 400; margin: 10px 0 15px; }
-.subPage aside .boardArea ul li a p{font-size: 14px; line-height: 20px; color: #888888;}
-.subPage aside .boardArea ul li a .iconBox{position: absolute; right: 0; bottom: 20px;} */
 
 
 /* 중고거래 - 등록 */
