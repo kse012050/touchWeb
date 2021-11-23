@@ -433,14 +433,14 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 
 .usedTradePage .detailArea .goodsArea .userArea{padding: 45px 84px;}
 
-.usedTradePage .detailArea .goodsArea .userArea .userBox{display: flex;}
+/* .usedTradePage .detailArea .goodsArea .userArea .userBox{display: flex;}
 .usedTradePage .detailArea .goodsArea .userArea .userBox:not(:last-child){}
 .usedTradePage .detailArea .goodsArea .userArea .userBox > .imgBox{width: 45px; height: 45px; border-radius: 100%; border: 1px solid #b9b9b9; box-sizing: border-box;}
 .usedTradePage .detailArea .goodsArea .userArea .userBox .textArea{flex: 1;display: flex; flex-wrap: wrap; align-items: center; align-content: space-between; margin: 0 15px; padding: 5px 0; box-sizing: border-box;}
 .usedTradePage .detailArea .goodsArea .userArea .userBox .textArea b{font-weight: 700;}
 .usedTradePage .detailArea .goodsArea .userArea .userBox .textArea small{width: 100%; font-size: 14px; color: #888888;}
 .usedTradePage .detailArea .goodsArea .userArea .userBox.sellerArea .textArea time{font-size: 14px; color: #555555; margin-left: 13px;}
-.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea p{width: 100%;}
+.usedTradePage .detailArea .goodsArea .userArea .userBox .textArea p{width: 100%;} */
 
 .usedTradePage .detailArea .goodsArea .userArea .sellerArea{margin-bottom: 15px; position: relative;}
 .usedTradePage .detailArea .goodsArea .userArea .sellerArea .iconBox{align-self: flex-end;}
@@ -454,18 +454,18 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .usedTradePage .detailArea .goodsArea .userArea .goodsInfo p{line-height: 26px;}
 .usedTradePage .detailArea .goodsArea .userArea .goodsInfo button{position: absolute; right: 0; top: 20px;}
 
-.usedTradePage .detailArea .goodsArea .userArea .inputArea{position: relative; margin-top: 40px;}
+/* .usedTradePage .detailArea .goodsArea .userArea .inputArea{position: relative; margin-top: 40px;}
 .usedTradePage .detailArea .goodsArea .userArea .inputArea b{position: absolute; left: 20px; top: 20px; font-weight: 700;}
 .usedTradePage .detailArea .goodsArea .userArea .inputArea textarea{resize: none; width: 100%; height: 175px; padding: 50px 20px; box-sizing: border-box; border: 1px solid #e0e0e0; color: #888888;}
-.usedTradePage .detailArea .goodsArea .userArea .inputArea button{position: absolute; right: 20px; bottom: 20px; font-weight: 700;}
+.usedTradePage .detailArea .goodsArea .userArea .inputArea button{position: absolute; right: 20px; bottom: 20px; font-weight: 700;} */
 
-.usedTradePage .detailArea .goodsArea .commentBox{}
-.usedTradePage .detailArea .goodsArea .commentBox strong{display: block; font-size: 18px; font-weight: 800; padding-top: 20px;}
+
+/* .usedTradePage .detailArea .goodsArea .commentBox strong{display: block; font-size: 18px; font-weight: 800; padding-top: 20px;}
 .usedTradePage .detailArea .goodsArea .commentBox .userBox img{align-self: flex-start; padding: 17px 19px 0 38px;}
 .usedTradePage .detailArea .goodsArea .commentBox .userBox{flex-wrap: wrap; padding: 20px 0;}
 .usedTradePage .detailArea .goodsArea .commentBox .userBox:not(:last-of-type){border-bottom: 1px solid #ebebeb;}
 .usedTradePage .detailArea .goodsArea .commentBox .userBox .textArea b{margin-bottom: 10px;}
-.usedTradePage .detailArea .goodsArea .commentBox .userBox .textArea time{width: 100%; font-size: 14px; color: #888888; margin-top: 15px;}
+.usedTradePage .detailArea .goodsArea .commentBox .userBox .textArea time{width: 100%; font-size: 14px; color: #888888; margin-top: 15px;} */
 
 .usedTradePage .detailArea .realTimeArea > strong {display: block; font-size: 26px; font-weight: 800; margin-bottom: 20px;}
 .usedTradePage .detailArea .realTimeArea .usedTradeBox{justify-content: flex-start;}
@@ -544,3 +544,27 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .communityPage .inputBox fieldset .imgRegiBox .fileArea > *:not(:nth-child(-n + 10)){margin-top: 20px;}
 
 .communityPage .formBtn {margin-top: 30px;}
+
+/* 커뮤니티 - 상세페이지 */
+.communityPage .detailArea > div > div:not(.enrollmentBox) button{width: 56px; height: 30px; font-size: 14px; color: #888888; font-weight: 700; border: 1px solid #d2d2d2;}
+
+.communityPage .detailArea h3{padding-top: 30px; font-size: 26px; font-weight: 700; margin-bottom: 20px;}
+.communityPage .detailArea .titlaArea{padding: 20px 0; border-width: 2px 0 1px; border-style: solid; border-color: black transparent #e0e0e0; position: relative;}
+.communityPage .detailArea .titlaArea p{font-size: 20px; margin-bottom: 20px;}
+.communityPage .detailArea .titlaArea > div{display: flex; align-items: center;}
+.communityPage .detailArea .titlaArea > div > *{font-size: 14px;}
+.communityPage .detailArea .titlaArea > div > *:not(:last-child){padding-right: 10px; margin-right: 10px; border-right: 1px solid #e0e0e0;}
+.communityPage .detailArea .titlaArea > button{position: absolute; right: 0; top: 35px;}
+
+.communityPage .detailArea .contentsArea{height: 350px; padding: 30px 0; box-sizing: border-box;}
+
+.communityPage .detailArea .commentBox{border-top: 1px solid #ebebeb;}
+.communityPage .detailArea .commentBox .textArea{position: relative;}
+.communityPage .detailArea .commentBox .textArea .iconBox{margin-left: 20px;}
+.communityPage .detailArea .commentBox .textArea .btnArea{position: absolute; right: 0; bottom: 0; display: flex;}
+.communityPage .detailArea .commentBox .textArea .btnArea li:not(:last-child){margin-right: 5px;}
+
+.communityPage .detailArea .enrollmentBox{margin-bottom: 30px;}
+.communityPage .detailArea .enrollmentBox textarea{border-color: #ebebeb;}
+
+.communityPage .detailArea .linkArea{padding-top: 30px; border-top: 1px solid #ebebeb;}

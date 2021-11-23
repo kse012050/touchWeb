@@ -78,12 +78,34 @@ mark > *{color: #ff9900;}
 .imgRegiBox > .fileArea .imgBox{position: relative;}
 .imgRegiBox > .fileArea .imgBox .removeBtn{position: absolute; right: -6px; top: -6px; width: 20px; line-height: 20px; text-align: center; background-color: black; border-radius: 100%; font-size: 20px; color: white; font-weight: 900;}
 
-/* 중고거래 */
+/* 중고거래 리스트*/
 .usedTradeBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .usedTradeBox li a{width: 100%; margin-bottom: 20px;}
 .usedTradeBox li a .imgBox{width: 100%; margin-bottom: 20px;}
 
+/* 댓글 */
+.userBox{display: flex;}
+.userBox:not(:last-child){}
+.userBox > .imgBox{width: 45px; height: 45px; border-radius: 100%; border: 1px solid #b9b9b9; box-sizing: border-box;}
+.userBox .textArea{flex: 1;display: flex; flex-wrap: wrap; align-items: center; align-content: space-between; margin: 0 15px; padding: 5px 0; box-sizing: border-box;}
+.userBox .textArea b{font-weight: 700;}
+.userBox .textArea small{width: 100%; font-size: 14px; color: #888888;}
+.userBox.sellerArea .textArea time{font-size: 14px; color: #555555; margin-left: 13px;}
+.userBox .textArea p{width: 100%;}
 
+.commentBox strong{display: block; font-size: 18px; font-weight: 800; padding-top: 20px;}
+.commentBox .userBox img{align-self: flex-start; padding: 17px 19px 0 38px;}
+.commentBox .userBox{flex-wrap: wrap; padding: 20px 0;}
+.commentBox .userBox:not(:last-of-type){border-bottom: 1px solid #ebebeb;}
+.commentBox .userBox .textArea b{margin-bottom: 10px;}
+.commentBox .userBox .textArea > div{margin-top: 15px; display: flex; align-items: center;}
+.commentBox .userBox .textArea > div time{width: 100%; font-size: 14px; color: #888888; }
+
+/* 등록 */
+.enrollmentBox{position: relative; margin-top: 40px;}
+.enrollmentBox b{position: absolute; left: 20px; top: 20px; font-weight: 700;}
+.enrollmentBox textarea{resize: none; width: 100%; height: 175px; padding: 50px 20px; box-sizing: border-box; border: 1px solid #e0e0e0; color: #888888;}
+.enrollmentBox button{position: absolute; right: 20px; bottom: 20px; font-weight: 700;}
 
 /* 팝업 */
 [class*='popup']{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.8);}
