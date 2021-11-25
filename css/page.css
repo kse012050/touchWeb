@@ -478,11 +478,16 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .communityPage input[type='text'],
 .communityPage textarea{color: #888888; padding:10px; border: 1px solid #cacaca; box-sizing: border-box;}
 .communityPage input[type='text']{height: 40px;}
-
+/* 
 .communityPage .writeBox{display: flex; margin-bottom: 30px;}
 .communityPage .writeBox input{width: 775px;}
 .communityPage .writeBox button{width: 115px; height: 40px; color: #ff9900; font-weight: 700; border: 1px solid #ff9900; display: flex; justify-content: center; align-items: center;}
 .communityPage .writeBox button::before{content: ''; width: 26px; height: 20px; background: url('../images/writeIcon.png') no-repeat center / cover; margin-right: 13px;}
+ */
+.communityPage .writeBox{display: flex; justify-content: flex-end; margin-bottom: 30px; padding-bottom: 10px; border-bottom: 2px solid #9c9c9c;}
+.communityPage .writeBox input{width: 775px; border: none; display: none;}
+.communityPage .writeBox button{width: 115px; height: 40px; color: #9c9c9c; font-weight: 700; border: 1px solid #9c9c9c; display: flex; justify-content: center; align-items: center;}
+.communityPage .writeBox button::before{content: ''; width: 26px; height: 20px; background: url('../images/oneroom_detailBtn03.png') no-repeat center / cover; margin-right: 13px;}
 
 .communityPage .commuListBox{padding: 10px 20px; border: 1px solid #e0e0e0;}
 .communityPage .commuListBox li{padding: 10px 0;}
@@ -501,7 +506,7 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 /* 커뮤니티 */
 
 /* 커뮤니티 - 글쓰기 */
-.communityPage .inputBox{margin-bottom: 30px;}
+.communityPage .inputBox{margin-bottom: 30px; display: none;}
 .communityPage .inputBox fieldset{padding: 20px; border: 1px solid #e0e0e0;}
 .communityPage .inputBox fieldset > *{width: 100%;}
 .communityPage .inputBox fieldset > *:not(:first-child):not(:last-child){margin-top: 10px;}
@@ -521,9 +526,13 @@ aside > *:not(:last-child){margin-bottom: 30px;}
 .communityPage .detailArea .titlaArea > div{display: flex; align-items: center;}
 .communityPage .detailArea .titlaArea > div > *{font-size: 14px;}
 .communityPage .detailArea .titlaArea > div > *:not(:last-child){padding-right: 10px; margin-right: 10px; border-right: 1px solid #e0e0e0;}
-.communityPage .detailArea .titlaArea > button{position: absolute; right: 0; top: 35px;}
+.communityPage .detailArea .titlaArea{position: relative;}
+.communityPage .detailArea .titlaArea > ul{position: absolute; right: 0; top: 35px; display: flex;}
+.communityPage .detailArea .titlaArea > ul li:not(:last-child){margin-right: 10px;}
+
 
 .communityPage .detailArea .contentsArea{height: 350px; padding: 30px 0; box-sizing: border-box;}
+.communityPage .detailArea .contentsArea div{margin-top: 150px;}
 
 .communityPage .detailArea .commentBox{border-top: 1px solid #ebebeb;}
 .communityPage .detailArea .commentBox .textArea{position: relative;}

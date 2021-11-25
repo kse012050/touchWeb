@@ -11,6 +11,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/com.js"></script>
     <link rel="stylesheet" href="css/import.css">
+    <script>
+        $(document).ready(function(){
+            $('.communityPage .writeBox button').click(function(){
+                $('.communityPage .inputBox').slideDown();
+            });
+            $('.formBtn input[type="reset"]').click(function(e){
+                e.preventDefault();
+                $('.communityPage .inputBox').slideUp();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="subPage communityPage">
