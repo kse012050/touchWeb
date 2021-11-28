@@ -7,18 +7,23 @@
     <!-- Iphone 모바일 확대 방지 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0"">
     <title>toch</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 공통 script -->
+    <script src="js/com.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
     <div class="mainPage">
-        <header>
+        <header class="paddingBox">
             <h1>
                 <a href="#">
                     <img src="images/logo.png" alt="toch logo">
                 </a>
             </h1>
-            <div>
-                <button class="imgBox">
+            <div class="btnArea">
+                <button class="imgBox" data-click="searchBox">
                     검색버튼
                 </button>
                 <button class="imgBox">
@@ -26,6 +31,15 @@
                 </button>
                 <button class="imgBox">
                     ??버튼
+                </button>
+            </div>
+            <div class="searchBox paddingBox">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button class="imgBox">
+                    검색버튼
+                </button>
+                <button class="imgBox close">
+                    검색 닫기 버튼
                 </button>
             </div>
         </header>
