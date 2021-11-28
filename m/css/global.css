@@ -16,7 +16,7 @@
 /* .boardBox h2, */
 .mainPage .mainArea section h2{font-size: 1.875rem; font-weight: 800; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.250rem;}
 .boardBox ul li:not(:last-child){border-bottom: 0.063rem solid #e0e0e0;}
-.boardBox ul li a{display: flex; justify-content: space-between; align-items: center; padding: 1.875rem 0; }
+.boardBox ul li a{display: flex; justify-content: space-between; align-items: center; padding: 1.275rem 0; }
 .boardBox ul li a p{font-size: 1.500rem;}
 .boardBox ul li a time{font-size: 1.250rem; color: #888888;}
 
