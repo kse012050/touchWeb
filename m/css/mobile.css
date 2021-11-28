@@ -1,10 +1,66 @@
 /* global */
+mark{color: #ff7200;}
+mark a{color: #ff7200;}
+
+/* 뒤로가기 링크 */
+.backLink{display: inline-block; width: 38px; height: 27px; background: url('../images/backLink.png') no-repeat center / cover; text-indent: -9999px;}
+
+.myPage > [class*=Area]{padding-top: 140px; padding-bottom: 195px;}
+
 .searchBox{position: absolute; left: -100%; width: 100%; height: 100%; background-color: white; display: flex; justify-content: center; align-items: center; transition: 0.5s left;}
 .searchBox.active{left: 0;}
-.searchBox input{width: calc(100% - ((37px * 2) + 60px)); font-size: 24px; color: #888888; border: none; }
+.searchBox input{width: calc(100% - ((37px * 2) + 60px)); font-size: 24px; border: none; }
+.searchBox input::placeholder{color: #888888;}
 .searchBox button{width: 37px; height: 39px;}
 .searchBox button:nth-of-type(1){background-image: url('../images/gnb_search.png');}
 .searchBox button:nth-of-type(2){background-image: url('../images/gnb_close.png');}
 .searchBox button:not(:last-of-type){display: flex; align-items: center;}
 .searchBox button:not(:last-of-type){margin-right: 60px; position: relative;}
 .searchBox button:not(:last-of-type)::after{content: ''; position: absolute; right: -30px; top: 0; width: 1px; height: 100%; background-color: #dadada;}
+
+
+
+/* page */
+/* 로그인 */
+.loginPage .loginArea{height: 100vh; min-height: 585px; display: flex; align-items: center; padding: 120px 0 135px;}
+.loginPage fieldset{min-height: 585px;}
+.loginPage fieldset legend{font-size: 50px; font-weight: 700; text-align: center; margin-bottom: 70px;}
+.loginPage fieldset input:not([type='submit']){width: 100%; font-size: 24px; padding: 20px; box-sizing: border-box; border: 1px solid #cacaca; margin-bottom: 20px; }
+.loginPage fieldset input:not([type='submit'])::placeholder{color: #888888;}
+.loginPage fieldset p{font-size: 22px;}
+.loginPage fieldset p:first-of-type{margin-bottom: 55px;}
+.loginPage fieldset input[type="submit"]{font-size: 30px; font-weight: 700; line-height: 70px; width: 100%; border: none; background-color: #ff9900; margin-bottom: 60px;}
+.loginPage fieldset p:not(:first-of-type){text-align: center;}
+.loginPage fieldset p:not(:first-of-type):not(:last-of-type){margin-bottom: 30px;}
+.loginPage fieldset p mark a{text-decoration: underline;}
+
+
+/* 마이페이지 */
+.myPageArea div button ,
+.linkBox a:not(.backLink){width: 95px; line-height: 53px; font-size: 22px; font-weight: 700; text-align: center;}
+.linkBox{display: flex; align-items: center;}
+.linkBox .backLink{margin-right: 30px;}
+.linkBox p{font-size: 30px; font-weight: 700;}
+.linkBox a:not(.backLink){margin-left: auto; color: white; background-color: black; border: 1px solid #555555;}
+
+.myPageArea .linkBox{margin-bottom: 45px;}
+
+.myPageArea .imgArea{margin-bottom: 40px; text-align: center;}
+.myPageArea .imgArea .imgBox{width: 140px; height: 140px; border: 1px solid #b8b8b8; border-radius: 100%; box-sizing: border-box; margin: 0 auto 20px;} 
+.myPageArea .imgArea button{color: #888888; border: 1px solid #d2d2d2;}
+
+.myPageArea .textArea{padding-top: 40px; padding-bottom: 40px; border-width: 1px 0; border-style: solid; border-color: #e0e0e0; margin-bottom: 40px;}
+.myPageArea .textArea dl{display: flex; justify-content: space-between; align-items: center; font-size: 24px;}
+.myPageArea .textArea dl:not(:last-of-type){margin-bottom: 40px;}
+.myPageArea .textArea dl dt{font-weight: 700;}
+
+.myPageArea > button{width: 100%; height: 70px; font-size: 30px; font-weight: 700; background-color: #ff9900;}
+
+/* 마이페이지 - 수정 */
+.correctionArea .linkBox{margin-bottom: 60px;}
+.correctionArea ul{padding-bottom: 40px; border-bottom: 1px solid #e0e0e0; margin-bottom: 40px;}
+.correctionArea ul li:not(:last-child){margin-bottom: 40px;}
+.correctionArea ul li label{display: block; font-size: 20px; font-weight: 700; margin-bottom: 15px;}
+.correctionArea ul li input{width: 100%; height: 70px; font-size: 24px; padding: 20px; border: 1px solid #cacaca; box-sizing: border-box;}
+.correctionArea ul li input::placeholder{color: #888888;}
+.correctionArea input[type="submit"]{width: 100%; height: 70px; font-size: 30px; font-weight: 700; background-color: #ff9900; border: none;}
