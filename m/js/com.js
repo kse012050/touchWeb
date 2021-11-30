@@ -19,4 +19,20 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         $(this).next().slideToggle();
     })
+
+    $('[data-popup]').click(function(e){
+        e.preventDefault();
+        var selector = $('.' + $(this).attr('data-popup'));
+        selector.addClass('active');
+
+        selector.click(function(){
+            selector.removeClass('active');
+        });
+        selector.children('div').click(function(e){
+            e.stopPropagation();
+        })
+        selector.find('button').click(function(){
+            selector.removeClass('active');
+        });
+    });
 })
